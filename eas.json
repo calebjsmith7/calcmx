@@ -15,6 +15,12 @@
     },
     "production": {
       "distribution": "store",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": false
+      },
       "autoIncrement": true
     }
   },
