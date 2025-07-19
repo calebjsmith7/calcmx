@@ -1,0 +1,31 @@
+name: EAS Build (Production)
+
+on:
+  push:
+    branches:
+      - main # Triggers build when pushing to main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run EAS Build
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EAS_TOKEN }}
+
+      - name: Trigger EAS build for both platforms
+        run: eas build --platform all --non-interactive --profile production
