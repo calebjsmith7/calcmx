@@ -28,4 +28,4 @@ jobs:
           token: ${{ secrets.EAS_TOKEN }}
 
       - name: Trigger EAS build for both platforms
-        run: eas build --platform all --non-interactive --profile production
+        run: eas build --platform ios --non-interactive --profile production
