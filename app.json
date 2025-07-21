@@ -13,6 +13,7 @@
       "bundleIdentifier": "com.calebjsmith7.calcmx"
     },
     "android": {
+      "package": "com.calebjsmith7.calcmx",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
