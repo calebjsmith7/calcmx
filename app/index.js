@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
     padding: 20,
   },
-  displayContainerTablet: { flex: 0.25, paddingHorizontal: 80 },
+  displayContainerTablet: { flex: 0.12, paddingHorizontal: 80 },
   buttonsContainer: {
     flex: 1,
   },
